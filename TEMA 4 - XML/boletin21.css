@@ -1,0 +1,101 @@
+/*Apartado A
+biblioteca {
+	margin-left: 15 px;
+	background-color: pink;
+}
+
+titulo, autor, fechaPublicacion {
+	display: block; 
+	margin-left: 20px;
+}
+
+titulo {
+	text-shadow: 4px 5px blue;
+	font-size: 2em;
+}
+autor: first-letter {font-size: 2em;} 
+autor{
+	font-size: 1.5 em;
+}
+*/
+
+/*los id y los class en xml no funciona en todos los navegadores*/
+
+/*Apartado B
+marca1 libro{
+	border-bottom: none;
+	margin-top: 2em;
+	
+}
+marca2 libro{
+	border-bottom: none;
+	
+}
+libro{
+	border: 1px solid black;
+	display: block;
+	width: 30em;
+	margin-left: 2em;
+}
+titulo, autor, fechaPublicacion{
+	display: block;
+}
+titulo {
+	font-weight: bold;
+}
+*/
+
+/* Apartado C
+libro{
+	display: block;
+	border: 1px solid black;
+	margin-right: 30em ;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	margin-top: 4px;
+	background-color: greenyellow;
+}
+titulo{
+	font-weight: bold;
+}
+titulo, autor, fechaPublicacion{
+	display: block;
+}
+*/
+
+/* Apartado D
+// dif{ //otra opcion, poiniendo la etiqueta en xml
+	display: block;
+	background-color: grey;
+}
+
+libro {
+	display: block;
+	margin-right: 30em ;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	margin-top: 4px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+
+}
+titulo, autor, fechaPublicacion{
+	display: block;
+}
+
+autor, fechaPublicacion {
+	background-color: greenyellow;
+	
+}
+
+
+libro titulo  {
+	font-weight: bold;
+	border:1px solid black;
+	border-left: none;
+	border-right: none;
+	background-color: white;
+}
+
+*/

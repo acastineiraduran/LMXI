@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="dato.css"?>
+
+<!DOCTYPE ciclos [
+<!ELEMENT ciclos (ciclo+)>
+<!ELEMENT ciclo (nombre, modulo+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT modulo (#PCDATA)>
+<!ENTITY lm "Linguaxe de Marcas">
+<!ENTITY fol "Formacion e Orientacion Laboral">
+]>
+
+<ciclos>
+
+<ciclo>
+  <nombre>DAM 1</nombre>
+  <modulo>Linguaxe de Marcas</modulo>
+  <modulo>Formacion e Orientacion Laboral</modulo>
+</ciclo>
+
+<ciclo>
+  <nombre>ASIR 1</nombre>
+  <modulo>Linguaxe de Marcas</modulo>
+  <modulo>Formacion e Orientacion Laboral</modulo>
+</ciclo>
+
+</ciclos>

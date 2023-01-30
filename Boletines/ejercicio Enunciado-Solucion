@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE animal [
+<!ELEMENT animal (tipo+)>
+<!ELEMENT tipo (vertebrados | invertebrados)>
+
+<!ELEMENT vertebrados (grupo)>
+<!ELEMENT grupo (mamiferos | aves | reptiles | anfibios | peces)>
+<!ELEMENT mamiferos (especie, esperanzaVida, pais+)>
+<!ELEMENT aves (especie, esperanzaVida, pais+)>
+<!ELEMENT reptiles (especie, esperanzaVida, pais+)>
+<!ELEMENT anfibios (especie, esperanzaVida, pais+)>
+<!ELEMENT peces (especie, esperanzaVida, pais+)>
+<!ELEMENT especie (#PCDATA)>
+<!ATTLIST especie nombre CDATA #REQUIRED>
+<!ATTLIST especie edad NMTOKEN #REQUIRED>
+<!ELEMENT esperanzaVida (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+
+<!ELEMENT invertebrados (grupo2)>
+<!ELEMENT grupo2 (esponjas | equinodermos | anelidos | artropodos | moluscos)>
+<!ELEMENT esponjas (especie, esperanzaVida, pais+)>
+<!ELEMENT equinodermos (especie, esperanzaVida, pais+)>
+<!ELEMENT anelidos (especie, esperanzaVida, pais+)>
+<!ELEMENT artropodos (especie, esperanzaVida, pais+)>
+<!ELEMENT moluscos (especie, esperanzaVida, pais+)>
+
+]>
+
+<animal>
+
+<tipo>
+  <vertebrados>
+    <grupo>
+      <mamiferos>
+        <especie nombre = "Ricardo" edad = "5">Felinos</especie>
+        <esperanzaVida>10 años</esperanzaVida>
+        <pais>España</pais>
+        <pais>Potugal</pais>
+        <pais>Alemania</pais>
+      </mamiferos>
+    </grupo>
+  </vertebrados>
+</tipo>
+
+<tipo>
+  <vertebrados>
+    <grupo>
+      <mamiferos>
+        <especie nombre = "Fede" edad = "2">Perros</especie>
+        <esperanzaVida>15 años</esperanzaVida>
+        <pais>España</pais>
+      </mamiferos>
+    </grupo>
+  </vertebrados>
+</tipo>
+
+<tipo>
+  <invertebrados>
+    <grupo2>
+      <esponjas>
+        <especie nombre = "Don Bigotes" edad = "1">Perros</especie>
+        <esperanzaVida>1 años</esperanzaVida>
+        <pais>España</pais>
+      </esponjas>
+    </grupo2>
+  </invertebrados>
+</tipo>
+
+
+</animal>

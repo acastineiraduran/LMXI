@@ -1,0 +1,24 @@
+body{
+	background-color: blue;
+}
+h1{
+	text-align: center;
+	color: grey;
+	text-transform: uppercase;
+	font-size: 3em;
+}
+h2{
+	color: whitesmoke;
+
+}
+article.politico {
+	background-color: orangered;
+}
+
+article.politico section.inicioFinal{
+	background-color:darkorange;
+}
+section.descripcion{
+	background-color: orange;
+
+}

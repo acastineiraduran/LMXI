@@ -1,0 +1,65 @@
+/* RECORDAR:  la aplicacion de los estilos en css es en cascada,
+el estilo que se encuentre mas abajo es el que se va a aplicar
+(por tanto si tiene uno encima distinto, lo va a sobreescribir)*/
+.t1{
+	font-family: sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+h1{
+	border-style: solid;
+	text-align: center;
+}
+/* font-weight:  normal // para quitar la negrita. 
+Cuando hagamos la etiqueta b lo utilizaremos;*/
+h2 {
+	border-left: 20px double red; /* Tiene que ir por orden: 
+	tamaño, estilo y color;*/
+}
+h3 {
+	border-bottom: 10px dotted blue;
+	border-left: 25px dotted pink;
+	border-right: 10px dotted pink;
+	border-top: 5px dotted blue;
+}
+h4{
+	border-top:  20px double green;
+	border-bottom:  20px double blue;
+}
+h5 {
+	border-top: 10px dashed red;
+	border-bottom: 10px dotted black;
+	border-left: 10px solid black;
+	border-right:10px solid black;
+}
+h6 {
+	border-top: 10px dotted black;
+	border-right: 10px solid black;
+	border-left: 7px dotted red;
+	border-bottom:10px dashed black;
+}
+p {
+	font-family: sans-serif;
+	font-size: 20px;
+}
+.p1 {
+	border-top: 5px dashed blue;
+	border-bottom: 10px dashed blue;
+	border-right: 7px dashed green;
+	border-left: 20px dashed green;
+}
+.p2 {
+	border-top: 20px double yellow;
+	border-bottom: 20px double yellow;
+}
+.p3 {
+	border-top: 15px solid green;
+	border-bottom: 15px solid blue;
+}
+.p4 {
+	border-top: 30px dashed red;
+	border-bottom: 30px dotted black;
+	border-left: 30px solid black;
+	border-right: 30px solid black;
+}

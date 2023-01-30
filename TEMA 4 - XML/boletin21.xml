@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='boletin21.css'?>
+<biblioteca>
+<marca1>
+<libro>
+    <titulo>El código Da Vinci</titulo>
+    <autor>Dam Brown</autor>
+    <fechaPublicacion>2003</fechaPublicacion>
+</libro>
+</marca1>
+<marca2>  
+    <libro>
+        <titulo>La pirámide inmortal</titulo>
+       <autor>Javier Sierra</autor>
+        <fechaPublicacion>2014</fechaPublicacion>
+	</libro>
+</marca2>
+  <libro>
+       <titulo>El mundo azul ama tu caos</titulo>
+     <autor>Albert Espinosa</autor>
+       <fechaPublicacion>marzo 2015</fechaPublicacion>
+  </libro>
+</biblioteca>

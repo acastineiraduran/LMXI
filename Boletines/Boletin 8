@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RelativeLayout [
+<!ELEMENT RelativeLayout ((EditText | TextView | Button)*)>
+<!ELEMENT EditText (#PCDATA)>
+<!ELEMENT TextView (#PCDATA)>
+<!ELEMENT Button (#PCDATA)>
+
+<!ATTLIST RelativeLayout xmlns:android CDATA #REQUIRED>
+<!ATTLIST RelativeLayout android:layout_width CDATA #REQUIRED>
+<!ATTLIST RelativeLayout android:layout_height CDATA #REQUIRED>
+
+<!ATTLIST EditText android:id CDATA #REQUIRED>
+<!ATTLIST EditText android:layout_width CDATA #REQUIRED>
+<!ATTLIST EditText android:layout_height CDATA #REQUIRED>
+<!ATTLIST EditText android:background CDATA #REQUIRED>
+<!ATTLIST EditText android:layout_below CDATA #REQUIRED>
+
+<!ATTLIST TextView android:id CDATA #REQUIRED>
+<!ATTLIST TextView android:layout_width CDATA #REQUIRED>
+<!ATTLIST TextView android:layout_height CDATA #REQUIRED>
+<!ATTLIST TextView android:layout_below CDATA #REQUIRED>
+<!ATTLIST TextView android:text CDATA #REQUIRED>
+
+<!ATTLIST Button android:id CDATA #REQUIRED>
+<!ATTLIST Button android:layout_width CDATA #REQUIRED>
+<!ATTLIST Button android:layout_height CDATA #REQUIRED>
+<!ATTLIST Button android:layout_below CDATA #IMPLIED>
+<!ATTLIST Button android:layout_toRightOf CDATA #IMPLIED>
+<!ATTLIST Button android:layout_alignParentLeft CDATA #IMPLIED>
+<!ATTLIST Button android:layout_alignTop CDATA #IMPLIED>
+<!ATTLIST Button android:onClick CDATA #REQUIRED>
+<!ATTLIST Button android:text CDATA #REQUIRED>
+
+ ]>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/
+android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<EditText
+android:id="@+id/op_a"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@android:drawable/editbox_background"
+android:layout_below="@id/label_a"/>
+
+<TextView
+android:id="@+id/label_b"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/op_a"
+android:text="Operando B:"/>
+<EditText
+android:id="@+id/op_b"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@android:drawable/editbox_background"
+android:layout_below="@id/label_b"/>
+  <Button
+android:id="@+id/sumar"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/op_b"
+android:layout_alignParentLeft="true"
+android:onClick="cSumar"
+android:text="+"/>
+  <Button
+android:id="@+id/restar"   
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@id/sumar"
+android:layout_alignTop="@id/sumar"
+android:onClick="cRestar"
+android:text="-"/>
+<Button
+android:id="@+id/multiplicar"  
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@id/restar"
+android:layout_alignTop="@id/restar"
+android:onClick="cMultiplicar"
+android:text="*" />
+<Button
+android:id="@+id/dividir"   
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@id/multiplicar"
+android:layout_alignTop="@id/sumar"
+android:onClick="cDividir"
+android:text="/"/>  
+<TextView
+android:id="@+id/texto_resultado"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/dividir"
+android:text="Resultado:"/>
+<TextView
+android:id="@+id/resultado"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/texto_resultado"
+android:text="Realice operación para obtener resultado"/>
+</RelativeLayout>

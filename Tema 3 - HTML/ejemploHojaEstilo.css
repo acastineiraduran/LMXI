@@ -1,0 +1,21 @@
+h1 {
+	background-color: grey; margin: 20px; /*otras opciones (si no pones nada se lo hace a todo):
+  	margin-left, margin-top, margin-right, margin-bottom */ 
+  	padding: 30px; /* margen interno */
+  	border:  4px inset red;
+  	/* propiedad bordes:  
+  	- border-width;
+  	- border-style:  solid/double/dashed(guiones)/dotted(puntitos)/inset(sensacion de profundidad)/outset("");
+  	- border-color;
+  	*/
+  	
+}
+p {
+	background-color: green;
+	margin:  10px 20px 30px 40px; /* este orden seria:  top, right, bottom, y left */
+	border-top: 20px dotted blue;
+	border-bottom: 10px dotted red;
+	/* El padding se lo haria a todos: */
+	width: 10%; /* ancho caja */
+  	height: 50%; /* alto caja */
+}

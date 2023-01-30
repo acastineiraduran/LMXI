@@ -1,0 +1,46 @@
+body{
+	background-color: green;
+}
+section.uno img {
+	float: left; /* quiere decir que esa imagen de esa seccion; para que la imagen se muestre izq */
+	border: 8px solid red;
+	background-color: orange; /* En conjunto con padding creara el margen interno */
+	padding: 8px; /* Para darle margen para luego aplicarle un color a ese marge */
+	margin-right: 8px; /* Para separar la imagen del titulo */
+	} 
+section.dos img {
+	float: right;
+	border: 8px solid orange;
+	background-color: red;
+	padding: 8px;
+	margin-left: 8px; /* Para separar la imagen del titulo */
+
+	}
+
+section.uno {
+	border: 6px solid red; /* overflow para que vaya todo dentro de los bordes */ 
+	padding: 10px;
+}
+
+section.dos {
+	border: 6px solid orange; /* overflow para que vaya todo dentro de los bordes */ 	
+	padding: 10px;
+}	
+
+section {
+	clear: both; /* clear: both cada vez que vayamos a una nueva section hay que borrar el formato */	
+	margin-right: 10%; 
+	margin-left: 10%;
+	background-color: white;
+	overflow: auto;
+}
+
+nav {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+

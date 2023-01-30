@@ -1,0 +1,28 @@
+body {
+	background-color: green;
+
+}
+h1 {
+	font-size: 3em;
+	font-variant: small-caps;/*pone a todas en mayusculas, al estar la G en mayuscula en el html, la pone un poco mas grande*/
+}
+.infancia {
+	font-family: serif;
+	color: white;
+	font-style: italic;
+}
+.animales {
+	font-family: sans-serif;
+	color: yellow;
+	letter-spacing: 0.5em;
+}
+.literatura {
+	font-family: monospace;
+	color: orange;
+	font-size: 1.5em;
+}
+.numeros {
+	font-family: cursive;
+	color: red;
+	word-spacing: 1.2em;
+}

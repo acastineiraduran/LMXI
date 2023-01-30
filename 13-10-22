@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datos [
+<!ELEMENT datos (d:direccion, c:direccion, r:direccion)>
+<!ELEMENT d:direccion (#PCDATA)>
+<!ELEMENT c:direccion (#PCDATA)>
+<!ELEMENT r:direccion (#PCDATA)>
+<!ATTLIST datos xmlns:d CDATA #FIXED "http://calle">
+<!ATTLIST datos xmlns:c CDATA #FIXED "http://correo">
+<!ATTLIST datos xmlns:r CDATA #FIXED "http://red"> 
+ ]>
+
+
+<datos xmlns:d="http://calle" xmlns:c="http://correo" xmlns:r="http://red">
+<d:direccion>calle rosalia</d:direccion>
+<c:direccion>nombre@gmail.com</c:direccion>
+<r:direccion>10.0.0.1</r:direccion>
+</datos>

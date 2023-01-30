@@ -1,0 +1,36 @@
+body {
+	background-color: green;
+}
+h1 {
+	text-align: center;
+	color: white;
+	/*Sombrear texto: */
+	text-shadow:  8px /*desplazamiento horizontal*/ 8px /*desplazamiento vertical*/ black;
+}
+.c1{
+	margin-right: 15%;
+	margin-left: 15%;
+	background-color: white;
+	border: 5px solid black;
+	border-radius: 10px; /*redondear*/ 
+	padding: 20px;
+}
+.c2 {
+	border: 8px solid darkblue;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 5px;
+	margin-right: 50%;
+	color: white;
+	background-color: blue;
+	text-si
+}
+.c3 {
+	border: 3px dashed red;
+	padding: 15px;
+	margin-left: 50%;
+	color: white;
+	background-color: darkorange;
+	text-si
+}
+

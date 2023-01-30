@@ -1,0 +1,9 @@
+
+nombre {
+color: blue;
+font-size: 200em;
+}
+
+nombre, movil{
+display: block;
+}
