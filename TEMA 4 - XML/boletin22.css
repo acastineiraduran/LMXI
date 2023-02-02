@@ -47,21 +47,20 @@ resumen{
 }
 */
 
-/*
-D
+
 edificio{
 	display: block; 
 	counter-reset: contador;
 	margin-bottom: 10px;
 }
-nombre:before, ciudad: before, completado: before{
-	content:  counter(cotador, lower-alpha)". ";
+nombre:before, ciudad:before, completado:before{
+	content: counter(contador, lower-alpha)". ";
 }
 nombre, ciudad, completado{
 	display: block;
 	margin-left: 40px;
 	counter-increment: contador;
-	list-style: lower-alpha inside;
+	list-style: lower-alpha inside; 
 }
 altura, pisos{
 	display: none;
@@ -70,7 +69,7 @@ resumen{
 	margin-left: 0.5em;
 	font-size: 2em;
 }
-*/
+
 
 
 
