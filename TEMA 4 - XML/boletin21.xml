@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type='text/css' href='boletin21.css'?>
 <biblioteca>
+    <diff>
 <marca1>
 <libro>
     <titulo>El código Da Vinci</titulo>
@@ -20,4 +21,5 @@
      <autor>Albert Espinosa</autor>
        <fechaPublicacion>marzo 2015</fechaPublicacion>
   </libro>
+</diff>
 </biblioteca>

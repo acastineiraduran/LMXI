@@ -1,0 +1,19 @@
+/*A
+nombre{
+	font-size: 2em;
+}
+libros{
+	display: table;
+	border: 2px solid black;
+	border-spacing: 2px; 
+	margin-left: 3em;
+}
+libro{
+	display: table-row;
+}
+titulo, autor, fechaPublicacion {  
+	padding: 5px;
+	display:table-cell; 
+	border:2px solid black;
+}
+*/

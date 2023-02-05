@@ -1,23 +1,30 @@
+
 /*Apartado A
 biblioteca {
 	margin-left: 15 px;
 	background-color: pink;
 }
 
-titulo, autor, fechaPublicacion {
+titulo, autor {
 	display: block; 
 	margin-left: 20px;
+	font-size: 2em;
 }
 
 titulo {
 	text-shadow: 4px 5px blue;
-	font-size: 2em;
+	font-size: 3em;
 }
-autor: first-letter {font-size: 2em;} 
-autor{
-	font-size: 1.5 em;
+
+autor::first-letter {font-size: 2em;} 
+
+fechaPublicacion {
+	font-size:1 px;
+	margin-left: 20px;
+
 }
 */
+
 
 /*los id y los class en xml no funciona en todos los navegadores*/
 
@@ -45,7 +52,7 @@ titulo {
 }
 */
 
-/* Apartado C
+/*apartado C
 libro{
 	display: block;
 	border: 1px solid black;
@@ -54,6 +61,7 @@ libro{
 	margin-left: 4px;
 	margin-top: 4px;
 	background-color: greenyellow;
+	padding: 9px;
 }
 titulo{
 	font-weight: bold;
@@ -62,16 +70,18 @@ titulo, autor, fechaPublicacion{
 	display: block;
 }
 */
-
-/* Apartado D
-// dif{ //otra opcion, poiniendo la etiqueta en xml
+/*apartado D
+diff{ 
 	display: block;
 	background-color: grey;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	margin-right: 20em;
 }
 
 libro {
 	display: block;
-	margin-right: 30em ;
+	margin-right: 0.5em ;
 	margin-bottom: 4px;
 	margin-left: 4px;
 	margin-top: 4px;
@@ -79,16 +89,17 @@ libro {
 	border-right: 1px solid black;
 	border-left: 1px solid black;
 
+
 }
 titulo, autor, fechaPublicacion{
 	display: block;
+	padding: 2px;
 }
 
 autor, fechaPublicacion {
 	background-color: greenyellow;
 	
 }
-
 
 libro titulo  {
 	font-weight: bold;
