@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>boletin13</title>
+</head>
+<body>
+	<!--esto creo que es para enviar el formulario basicamente-->
+<FORM ACTION=”angel:acastineiraduran@danielcastelao.org METHOD="POST" ENCTYPE="TEXT/PLAIN">
+	<!--para las lineas del formulario:
+		dotted (puntedo en ing): para puntear
+		dashed (giones): para los guiones
+		solid (sin parar): continue
+	-->
+	<fieldset style="border: 2px solid; border-top: 2px dashed;"><legend>Formulario</legend>
+	<b>NIF: </b>
+	<!--size simplemente para la cantidad de caracteres que va a medir casilla-->
+	<input type= "TEXT"; size="13">
+	<br>
+
+	<!--mismo nombre para relacionarlos y que solo puedas escoger 1-->
+	<input type="RADIO" name="EDAD">
+	<input type="RADIO" name="EDAD">
+	<input type="RADIO" name="EDAD">
+	</fieldset>
+
+	<!--para poner opciones, solo escoger 1-->
+	<select><option>soltero</option>
+			<option>casado</option>
+			<option>divorciado</option>
+	</select>
+
+	<!--solo 3 opciones posibles y solo escoger 1-->
+	<select size="3"><option>soltero</option>
+			<option>casado</option>
+			<option>divorciado</option>
+	</select>
+
+	<!--para escoger varias opciones-->
+	<input type="checkbox">1
+	<input type="checkbox">2
+	<input type="checkbox">3
+
+	<!--cols: numero de columnas que quiero, rows(filas): numero de filas que quiero. 
+		si pones uno muy grande, dependiendo en que navegador, aparecen flechitas para bajar o subir por el comentario. creo que no depende de esto --preguntar???!!!!
+	-->
+	<textarea rows="30" cols="40"; placeholder="texto de fondo"></textarea>
+
+	<!--bol14 si no pones nada es una table invisible-->
+	<table>
+		<tr><td>edad</td><td>Como nos conociste</td></tr>
+		<tr><td><input type="checkbox" name="">0-20</td></tr>
+	</table>
+
+	<!--para enviar o restablecer el formulario-->
+	<input type="submit" name=""; value="cambiostextoEnviar">
+		<input type="reset" name="">
+
+	<input type="TEXT"; value="@" name="">
+
+
+</FORM>
+</body>
+</html>

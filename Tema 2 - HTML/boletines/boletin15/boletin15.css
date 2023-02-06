@@ -1,0 +1,8 @@
+h1 {text-align: center;}
+p {background-color: lightgrey;}
+h2 {background-color: dimgrey; color: darkred;}
+em {color:  blue; text-decoration: underline; font-style: normal;}
+strong {font-weight: normal; color: green;}
+h3 {color: purple; background-color: darkgrey;}
+address {text-align: right; font-style: normal; font-size: small;}
+body {background-color: floralwhite;}
