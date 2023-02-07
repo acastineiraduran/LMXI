@@ -1,6 +1,7 @@
 /*A
 nombre{
 	font-size: 2em;
+	margin-left: 3em;
 }
 libros{
 	display: table;
@@ -17,3 +18,80 @@ titulo, autor, fechaPublicacion {
 	border:2px solid black;
 }
 */
+/*B
+biblioteca{
+	display: table;
+	border-spacing: 5px;
+	margin: auto;
+	border: 1px solid black;
+	padding: 1px;
+}
+
+nombre{
+	font-size: 1.5em;
+	background-color: grey;
+	display: table-caption;
+	text-align: center;
+	margin-block: 3px;
+	
+}
+
+libro {
+	display: table-row;
+}
+titulo, autor, fechaPublicacion{
+	display: table-cell;
+	padding: 6px;
+	border: 1px solid black;
+
+
+}
+*/
+/*D
+nombre{
+	display: block;
+}
+libro{
+	display: table;
+	margin: auto;
+	width:30%;
+	border: 1px solid black;
+	border-spacing: 5px;
+}
+titulo{
+	display:table-caption;
+	text-align: center;
+	background-color: grey;
+	margin-bottom: 4px;
+	margin-top: 10px;
+}
+autor, fechaPublicacion {
+	display: table-cell;
+	border: 1px solid black;
+	padding: 6px;
+}
+*/
+nombre{
+	display: none;
+}
+libros{
+	display: table;
+	border-spacing: 20px;
+	margin: auto;
+}
+libro{
+	display: table-cell;
+	border: 4px dashed black;
+	border-spacing: 10px;
+}
+titulo, autor, fechaPublicacion{
+	display: table-row;
+	background-color: green;
+}
+
+
+
+
+
+
+

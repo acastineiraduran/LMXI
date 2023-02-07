@@ -1,9 +1,9 @@
 body{
-	background-color: blue;
+	background-color: dimgrey;
 }
 h1{
 	text-align: center;
-	color: grey;
+	color: darkgrey;
 	text-transform: uppercase;
 	font-size: 3em;
 }
@@ -11,14 +11,91 @@ h2{
 	color: whitesmoke;
 
 }
+article {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.inicioFinal, .descripcion {
+	margin-right: 5px;
+	margin-left: 5px;
+	padding: 8px;
+}
+
+.descripcion {
+	padding-left: 1em;
+}
+
+h2{
+	margin-bottom: 7px;
+	margin-top: 7px;
+	padding-left: 5px;
+}
+
+div {
+	padding: 1px;
+}
+
 article.politico {
 	background-color: orangered;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+
 }
 
-article.politico section.inicioFinal{
-	background-color:darkorange;
+article.politico .descripcion, article.politico{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
-section.descripcion{
+
+article.politico div.inicioFinal {
+	background-color: darkorange;
+}
+
+article.politico div.descripcion {
 	background-color: orange;
-
 }
+
+.deportista {
+	background-color: deeppink;
+}
+
+article.empresario {
+	border-radius: 20px;
+}
+article.empresario div.descripcion, article.empresario{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+article.empresario div.inicioFinal {
+	background-color: skyblue;
+}
+
+article.empresario div.descripcion {
+	background-color: lightblue;
+}
+
+.empresario {
+	background-color: darkblue;
+}
+article.deportista div.inicioFinal {
+	background-color:hotpink;
+}
+
+article.deportista {
+	border-top-left-radius: 20px;
+}
+
+article.deportista, article.deportista div.descripcion {
+	border-bottom-right-radius: 20px;
+}
+
+article.deportista div.descripcion {
+	background-color:lightpink;
+}
+
+

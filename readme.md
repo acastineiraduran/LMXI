@@ -84,12 +84,20 @@ nombre, ciudad, completado{
 lo de `none` creo no lo entiendo muy bien porque quitando ese estilo me aparece igual. preguntar????
 
 ## Tablas
+`display-table` se lo pongo a todo lo que esta dentro de la tabla incluido el titulo de la misma si tiene
 ````css
 display: table; /*creas la tabla*/
 display; table-row; /*creas las fias*/
 display: table-cell; /*creas las columnas*/ 
-border-spacing: 2px; /*separar etiqueta del borde que lo rodea*/
 ````
+`table-row` pueden no ser necesarios.
+````css
+border-spacing: 2px; /*separar etiqueta del borde que lo rodea*/
+padding: 3em; /*aplicado a etiquetas cell, table*/
+display: table-caption; /*forma parte de la tabla, si la muevo tambien se mueve*/
+````
+No funciona el margin en las celdas???
+No funciona el padding en las etiqtas donde esta el `table-row`??
 
 ## Margenes
 ```css
@@ -97,6 +105,7 @@ margin-left: 5em; /*izq*/
 margin-top: 10px;
 margin-bottom: 10px; /*de abajo*/
 padding: 10px; /*margen interno*/
+width:50%; /*creo que es para darle anchura. para que era?????*/
 
 ```
 
@@ -116,6 +125,7 @@ autor::first-letter {font-size: 2em;} /*primera letras mas grande*/
 text-indent: -15px /*sangria*/
 text-transform: uppercase; /*convierte a mayuscula*/
 text-decoration: underline; /*subraya*/
+text-align: center /*centra con respecto al espacio que ocupa(creo que respecto al padding*/
 ```
 
 ## Contenido
