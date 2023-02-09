@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='examenCSS.css'?>
+<libros>
+<biblioteca>Biblioteca nacional</biblioteca>
+<libro>
+    <titulo>Pantaleón y las visitadoras</titulo>
+    <autor>Mario Vargas Llosa</autor>
+    <fechaPublicacion>1973</fechaPublicacion>
+  </libro>
+ <libro>
+    <titulo>La caída  de los gigantes</titulo>
+    <autor>Ken Follett</autor>
+    <fechaPublicacion>2010</fechaPublicacion>
+  </libro>
+  <libro>
+    <titulo>La vida está en otra parte</titulo>
+    <autor>Milan Kundera</autor>
+    <fechaPublicacion>1973</fechaPublicacion>
+  </libro>
+  </libros>

@@ -1,0 +1,69 @@
+
+libros {
+	margin-left: 1em;
+	margin-right:14em;
+	margin-top: 2em;
+	border-top: 1px solid black;
+	}
+libro {
+	display: table;
+	border: 1px solid black;
+	width: 90%;
+	background-color: lightgreen;
+	margin-bottom:16px;
+}
+titulo {
+	font-weight: bolder;
+	display: table-caption;
+	background-color: lightgrey;
+	margin-bottom: 4px;
+	
+	text-align: center;
+}
+autor, fechaPublicacion {
+	display: block;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 7px;
+	margin-right: 7px;
+	background-color: white;
+}
+
+biblioteca {
+	display: none;
+}
+/*
+libros {
+	counter-reset: conta;
+}
+biblioteca:before {
+	content: "LIBROS ";
+}
+biblioteca {
+	font-weight: bolder;
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+libro:before {
+	content: counter(conta, lower-alpha)". ";
+}
+
+libro {
+	display: block;
+	margin-left: 3em;
+	counter-increment: conta;
+	margin-bottom: 10px;
+}
+
+autor:before {
+	content: " (";
+}
+autor:after {
+	content: ")";
+}
+fechaPublicacion {
+	display: none;
+}
+*/
