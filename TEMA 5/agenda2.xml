@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/dam1/Angel%20Ejercicios/lmxi_v2/TEMA%205/agenda2.xsd">
+<nombre>angel</nombre>
+<direccion>
+  <calle>rosalia</calle>
+  <numero>37</numero>
+</direccion> 
+<movil>283983</movil>
+</agenda>

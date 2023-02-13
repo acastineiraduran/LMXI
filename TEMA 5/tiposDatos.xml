@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<datos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/dam1/Angel%20Ejercicios/lmxi_v2/TEMA%205/tiposDatos.xsd">
+<caracteres>eedefe</caracteres>
+<decimal>4.2</decimal>
+<entero>3</entero>
+<logico>1</logico><!--tambien podria poner true-->
+<fecha>2023-02-13</fecha>
+<hora>23:59:59</hora>
+<fechaHora>2023-02-05T23:59:59</fechaHora>
+</datos>
