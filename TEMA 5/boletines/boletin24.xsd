@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<!--
+  <xs:element name="persona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dni" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="estadoCivil" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="company">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="telefono" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>  
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+<!--
+<xs:element name="libro">
+    <xs:complexType>
+    
+      <xs:sequence>
+        <xs:element name="titulo" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="autor" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="editorial" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="precio" type="xs:integer" use="optional" default="30"/> 
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+<!--
+<xs:element name="listaproductos">
+    <xs:complexType>
+    
+      <xs:sequence>
+        <xs:element name="articulo" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+          
+            <xs:sequence>
+              <xs:element name="codigo" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="descripcion">
+                <xs:complexType mixed="true">
+                <xs:attribute name="autor" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>  
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+
+
+<xs:element name="alumnos">
+    <xs:complexType>
+      <xs:sequence>
+      
+        <xs:element name="alumno" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+              <xs:sequence>
+              
+                <xs:element name="nombre" minOccurs="0" maxOccurs="unbounded"/>
+                
+                <xs:element name="direccion" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                    
+                      <xs:element name="calle" minOccurs="0" maxOccurs="unbounded"/>
+                      <xs:element name="numero" minOccurs="0" maxOccurs="unbounded"/>
+                      <xs:element name="ciudad" minOccurs="0" maxOccurs="unbounded"/>
+                      <xs:element name="provincia" minOccurs="0" maxOccurs="unbounded"/>
+                    
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="telefono" minOccurs="0" maxOccurs="unbounded"/>
+                
+              </xs:sequence>
+            <xs:attribute name="dni" type="xs:integer" use="optional" default="222"/> 
+          </xs:complexType>
+        </xs:element>
+      
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

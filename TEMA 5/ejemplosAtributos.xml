@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<alumno nota="8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/dam1/Angel%20Ejercicios/lmxi_v2/TEMA%205/ejemplosAtributos.xsd">
+<nombre>Maria</nombre>
+<movil>3786457348</movil>
+</alumno>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<!--prototipo
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="element" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+<!--
+  <xs:element name="articulo">
+    <xs:complexType>
+      <xs:attribute name="codigo" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+<!--
+<xs:element name="empleado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        
+        <xs:element name="apellidos">
+          <xs:complexType>
+            <xs:sequence>
+            
+              <xs:element name="apellido1" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="apellido2" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              
+            </xs:sequence>
+          </xs:complexType>
+         </xs:element>
+        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+<!--
+  <xs:element name="documento">
+  <xs:complexType mixed="true">
+    <xs:sequence>
+    
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="fecha" type="xs:date"/>
+      <xs:element name="hora" type="xs:time"/>
+      
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+</xs:schema>
+-->
+  <xs:element name="encargados">
+    <xs:complexType>
+        <xs:sequence>
+        
+          <xs:element name="encargado" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:sequence>
+              
+              <xs:element name="nombre" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="apellidos" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+              
+              
+        </xs:sequence>
+      <xs:attribute name="clase" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>
+
+
