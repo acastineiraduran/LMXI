@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<materiales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/dam1/Angel%20Ejercicios/lmxi_v2/TEMA%205/boletines/boletin26.xsd">
+        <material>columna</material>
+       <altura>12</altura>
+       <precio>...........</precio>
+</materiales>
+-->
+
+ <persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/dam1/Angel%20Ejercicios/lmxi_v2/TEMA%205/boletines/boletin26.xsd">
+        <nombre>......... </nombre>
+        <altura>3.33 </altura>
+        <peso>3.333 </peso>
+  </persona>

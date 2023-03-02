@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<numeros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/dam1/Angel%20Ejercicios/lmxi_v2/TEMA%205/boletines/restriccionesNumericos.xsd">
+<numero1>5</numero1>
+<numero2>3.5</numero2>
+<numero3>0</numero3>
+<numero4>12345</numero4>
+<numero5>987</numero5>
+</numeros>

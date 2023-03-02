@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="numeros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="numero1">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="1"></xs:enumeration>
+              <xs:enumeration value="2"></xs:enumeration>
+                <xs:enumeration value="3"></xs:enumeration>
+                  <xs:enumeration value="3"></xs:enumeration>
+                    <xs:enumeration value="5"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+        </xs:element>
+        <xs:element name="numero2">
+        <xs:simpleType>
+        <xs:restriction base = 'xs:decimal'>
+        <xs:fractionDigits value = '1'/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:element>
+        <xs:element name="numero3">
+          <xs:simpleType>
+            <xs:restriction base = 'xs:integer'>
+              <xs:minInclusive value = '-1'/>
+              <xs:maxInclusive value = "1"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        
+         <xs:element name="numero4">
+          <xs:simpleType>
+            <xs:restriction base = 'xs:integer'>
+              <xs:pattern value = '[0-9]{5}'/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        
+        <xs:element name="numero5">
+          <xs:simpleType>
+            <xs:restriction base = 'xs:integer'>
+              <xs:totalDigits value = '3'/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -54,6 +54,7 @@
 </xs:element>
 </xs:schema>
 -->
+<!--
   <xs:element name="encargados">
     <xs:complexType>
         <xs:sequence>
@@ -76,5 +77,6 @@
   </xs:element>
   
 </xs:schema>
+-->
 
 
