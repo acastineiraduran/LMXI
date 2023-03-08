@@ -1,0 +1,79 @@
+# Prototipo
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="element" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>		
+
+# Tipo complejos: tienen subelementos/hijos y/o atributos:
+<xs:element name="lista_de_enteros" type="tipo_lista_enteros"/>
+<xs:complexType name="nombre_del_tipo_complejo"> 
+  <xs:sequence> <!-- sequence/all/choice -->
+    	... subelementos ...
+  </xs:sequence>
+  	... atributos ...
+</xs:complexType>
+
+# Tipos simples: para definir restricciones
+<xs:element name="lista_de_enteros" type="tipo_lista_enteros"/>
+<xs:simpleType name="nombre_del_tipo_simple">
+  <xs:restriction>
+    ... restricciones ...
+  </xs:restriction>
+</xs:simpleType>
+-------------------
+# Elementos sin/con subelementos
+
+## Elementos sin subelementos
+	
+
+## Elementos con subelementos
+<xs:complexType name="tipo_contacto">
+  <xs:complexContent> // para explicar estructura de "complexType"
+    <xs:extension base="tipo_persona">
+      <xs:sequence>
+        <xs:element name="email" type="xs:string"/>
+        <xs:element name="telefono" type="xs:string"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+# Elementos vacios
+<xs:complexType name="tipo_evento">
+  <xs:attribute name="nombre" type="xs:string" use="required"/>
+  <xs:attribute name="activo" type="xs:boolean" default="false"/>
+</xs:complexType>	
+-------------------
+repaso
+
+# Elemento mixto (con subelementos y contenido dentro de la etiqueta)
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="documento">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="fecha" type="xs:date" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="hora" type="xs:time" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+---------------
+# RESTRICCIONES --> NOTION, apuntes bol 25
+
+<xs:element name="color">	
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="negro"/>
+			<xs:enumeration value="marron"/>
+			<xs:enumeration value="azul"/>
+		</xs:restriction>
+  	</xs:simpleType>
+</xs:element>
+
