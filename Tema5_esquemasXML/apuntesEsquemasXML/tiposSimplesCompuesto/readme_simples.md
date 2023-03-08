@@ -57,7 +57,7 @@ CON ATRIBUTOS SE CONSIDERA COMPLEJO Y NO SIMPLE?????-->
 
 # Restricciones XSD
 
-![Untitled](Tipos%20Simples%20ce79748d0e694d8ba8d023fe810da895/Untitled.png)
+![Untitled](masInfo/Untitled.png)
 
 1. Restricciones en valores
     
@@ -223,8 +223,8 @@ CON ATRIBUTOS SE CONSIDERA COMPLEJO Y NO SIMPLE?????-->
 
 No está del todo bien creo:
 
-[apuntesSchema.txt](Tipos%20Simples%20ce79748d0e694d8ba8d023fe810da895/apuntesSchema.txt)
+[apuntesSchema.txt](masInfo/apuntesSchema.txt)
 
 Tampoco esta del todo bien, pero se irá actualizando
 
-[xsd.pdf](Tipos%20Simples%20ce79748d0e694d8ba8d023fe810da895/xsd.pdf)
+[xsd.pdf](masInfo/xsd.pdf)
