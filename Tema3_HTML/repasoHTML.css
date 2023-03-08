@@ -1,0 +1,91 @@
+
+p{
+	padding: 6px;
+	margin-top: 4px;
+	margin-block: 4px;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+.cita1 {
+	border: 3px solid orange;
+}
+
+.cita2 {
+	border: 3px solid violet;
+	margin-top: -12px;
+}
+
+.frase{
+	text-align: center;
+}
+
+.filosofo {
+	text-align: right;
+}
+
+.cita1 .frase {
+	background-color: yellow;
+}
+
+.cita1 .filosofo {
+	background-color: brown;
+}
+
+.cita2 .frase {
+	background-color: darkviolet;
+}
+
+.cita2 .filosofo{
+	background-color: violet;
+}
+
+section{
+	background-color: lightblue;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-left: 13em;
+	margin-right: 13em;
+	margin-bottom: 15em;
+
+}
+section nombre{
+	background-color: blue;
+	color: white;
+	display: block;
+	padding: 3px;
+	text-align: center;
+	margin-left: 1.4em;
+	margin-right: 2.0em;
+	font-size: 2em;
+}
+span, navegador, descripcion {
+	display: block;
+}
+span{
+	/*top, right, bottom, left*/
+	padding-left: 2em;
+	padding-right: 5em;
+	margin-top: 6px;
+	margin: 10px 2px 3px 36px;
+	border-radius: 10px
+
+}
+navegador{
+	
+	background-color: green;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding:0.3em;
+	color:white;
+	font-size: 1.3em;
+}
+descripcion {
+	background-color: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding:0.3em
+
+}
+
+

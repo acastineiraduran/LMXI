@@ -1,0 +1,65 @@
+
+/*
+centro{
+	margin-left: 3em;
+	margin-top: 3em;
+	
+}
+nombreCentro:after {
+	content: "-centro plurilingüe";
+}
+nombreCentro {
+	display: block;
+}
+
+ciclo {
+	display: list-item;
+	list-style-type: square;
+	counter: contador;
+	counter-increment: ;
+}
+nombre {
+	display: block;
+}
+decretoTitulo:before{
+	content: counter(contador,square)" ";
+}
+decretoTitulo {
+	counter-increment: contador;
+	list-style-type: none;
+}
+
+grado {
+	display: none;
+}
+*/
+centro {
+	border: 1px solid black;
+	height: 15	em;
+}
+nombreCentro {
+	display: block;
+	text-decoration: underline;
+}
+ciclos {
+	display: table;
+	border: 1px solid black;
+}
+ciclo {
+	display: table-row;
+}
+nombre, grado, decretoTitulo {
+	display: table-cell;
+	padding: 7px;
+	border: 1px solid black;
+}
+
+decretoTitulo {
+	width: 5em;
+	text-align: center;
+}
+
+
+
+
+

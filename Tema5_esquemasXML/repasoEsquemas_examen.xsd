@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="factura">
+    <xs:complexType>
+      <xs:sequence>
+      
+        <xs:element name="emision" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        
+        
+        <xs:element name="vendedor" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+            
+              <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        
+        
+        <xs:element name="cliente" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+            
+              <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+              <xs:element name="direccion" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="via" type="xs:string" minOccurs="1"/>
+                    <xs:element name="cp" type="xs:string" minOccurs="1"/>
+                    <xs:element name="localidad" type="xs:string" minOccurs="1"/>
+                    <xs:element name="provincia" type="xs:string" minOccurs="1"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="telefono" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="num" type="xs:string" default="false"/>
+                </xs:complexType>
+              </xs:element>
+            
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        
+        
+        <xs:element name="articulo" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+            
+              <xs:element name="denominacion" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+              <xs:element name="precio" type="xs:decimal" minOccurs="1" maxOccurs="unbounded"/>
+              <xs:element name="cantidad" type="xs:integer" minOccurs="1" maxOccurs="unbounded"/>
+              
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+            <xs:attribute name="iva" type="xs:integer" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        
+        
+        <xs:element name="descuento" minOccurs="0" maxOccurs="1">
+          	<xs:simpleType>
+		          <xs:restriction base="xs:integer"> <!--restricion-->
+		          
+			          <xs:minInclusive value="0"/>
+			          <xs:maxInclusive value="100"/>
+              
+		          </xs:restriction>
+	          </xs:simpleType>
+        </xs:element>
+        
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" default="false"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

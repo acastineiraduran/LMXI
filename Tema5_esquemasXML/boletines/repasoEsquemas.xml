@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--a
+<articulo codigo="a-1345" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/casty/OneDrive/Escritorio/dam1/lmxi_v2/TEMA%205/boletines/repasoExamen/repasoEsquemas.xsd"></articulo>
+-->
+
+<!--b
+<empleado xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/casty/OneDrive/Escritorio/dam1/lmxi_v2/TEMA%205/boletines/repasoExamen/repasoEsquemas.xsd">
+  <nombre>Marta</nombre>
+  <apellidos>
+     <apellido1>Perez</apellido1>
+    <apellido2>Pérez</apellido2>
+   </apellidos>
+</empleado>
+-->
+
+<!-- c 
+<documento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/casty/OneDrive/Escritorio/dam1/lmxi_v2/TEMA%205/boletines/repasoExamen/repasoEsquemas.xsd">
+ Estimado/a <nombre>Pablo Gómez</nombre>.
+  Su petición realizada el día:<fecha>2015-03-16</fecha>
+  será resuelta el día de hoy a las:<hora>12:10:00</hora>.
+</documento>
+-->
+
+<!--d
+<encargados clase="A1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/casty/OneDrive/Escritorio/dam1/lmxi_v2/TEMA%205/boletines/repasoExamen/repasoEsquemas.xsd">
+
+  <encargado>
+      <nombre>Manuel</nombre>
+      <apellidos>Pérez</apellidos>
+  </encargado>
+  <encargado>
+      <nombre>Marta</nombre>
+      <apellidos>González</apellidos>
+  </encargado>
+
+</encargados>
+-->
+<!--e
+<encargados xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/Users/casty/OneDrive/Escritorio/dam1/lmxi_v2/TEMA%205/boletines/repasoExamen/repasoEsquemas.xsd">
+
+  <encargado seccion="s1">
+      <nombre>Marta</nombre>
+      <apellidos>Sanchez</apellidos>
+  </encargado>
+  
+  <encargado seccion="s2">
+      <nombre>Mario</nombre>
+      <apellidos>Casillas</apellidos>
+  </encargado>
+
+</encargados>
+-->
+<partidos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Repaso.xsd">
+
+  <partido>
+    <local>Celta
+      <goles>2</goles>
+    </local>
+    <visitante>Depor
+      <goles>0</goles>
+    </visitante>
+  </partido>
+  
+  <partido>
+    <local goles="3">Napoles</local>
+    <visitante goles="2">Juventus</visitante>
+  </partido>
+  
+<partido local="Dortmund" golesLocal="5" visitante="Bayern" golesVisitante="3"></partido>  
+  
+</partidos>
+
+
+
+

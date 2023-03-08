@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<!--PROTOTIPO
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="element" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+
+<!--a // RESTRICCIONES EN VALORES
+<xs:element name="zapatos">
+    <xs:complexType>
+      <xs:sequence>
+            <xs:element name="zapato"/>
+            <xs:element name="color">
+	              <xs:simpleType>
+		                  <xs:restriction base="xs:string">
+			                    <xs:enumeration value="negro"/>
+			                    <xs:enumeration value="marron"/>
+			                    <xs:enumeration value="azul"/>
+		                 </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  </xs:schema>
+-->
+
+<!--b // RESTRICCION EN NUMERO CARAC PERMITIDO
+  <xs:element name="usuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombreUsuario" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="claveUsuario">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:length  value="8"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+<!--c // RESTRICCIONES DENTRO DE RANGO PERMITIDO
+  <xs:element name="usuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombreUsuario" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="claveUsuario">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="9"/>
+                  <xs:minLength value="5"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+
+<!--d //RESTRICCION DE LETRAS, NUMEROS Y CANTIDAD DIGITOS
+  <xs:element name="fichero">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombreFichero">
+          <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="[a-zA-Z0-9]{8}"/>
+                </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="extension">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="xml"/>
+                  <xs:enumeration value="xsd"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+
+<!--e
+  <xs:element name="alumnos">
+    <xs:complexType>
+      <xs:sequence>
+      
+        <xs:element name="alumno" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+          <xs:sequence>
+          
+            <xs:element name="nombre" type="xs:string"/>
+        
+            <xs:element name="direccion">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="calle" type="xs:string"/>
+                  <xs:element name="numero" type="xs:integer"/>
+                  <xs:element name="ciudad" type="xs:string"/>
+                  <xs:element name="provincia" type="xs:string"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="telefono">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:length value="9"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+        
+        </xs:sequence>
+        <xs:attribute name="dni" type="xs:string"/>
+        </xs:complexType>
+        </xs:element>
+        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  </xs:schema>
+-->
+
+
+  <xs:element name="libros">
+    <xs:complexType>
+      <xs:sequence>
+      
+        <xs:element name="libro" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo" type="xs:string"/>
+              <xs:element name="autor" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+              <xs:element name="fecha" type="xs:integer"/>
+              
+              <xs:element name="isbn">
+                <xs:simpleType>
+                 <xs:restriction base="xs:string">
+                    <xs:pattern value="[0-9]{3}[\-][0-9]{2}[\-][0-9]{3}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              
+              <xs:element name="editor" type="xs:string"/>
+              
+              <xs:element name="categoria">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="Ficcion||No ficcion"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              
+              <xs:element name="stock">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="Si||No"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              
+            </xs:sequence>
+            <xs:attribute name="revisor" type="xs:string" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  </xs:schema>
