@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+  <xsl:template match="/"><!--significa que seleccionamos todo-->
+  <!--ELEMENTOS-->
+  <html>
+  <body> 
+    <h1>Ejemplo 1</h1> 
+     <xsl:value-of select="titulo"/><!-- selecciona y muestra salida del elemento entre comillas-->
+     
+     <!--ORDEN ALFABETICO-->
+     
+    <h1>Ejemplo 2</h1>
+    <xsl:for-each select="//pelicula">
+      <xsl:sort select="titulo"/> <!--orden titulos alf con short->
+      <p><b>Titulo: </b>
+        <xsl:value-of select="titulo"/>
+      </p>
+    </xsl:for-each>
+    
+    <!--ORDEN INVERSO ALFABETICO-->
+    <!--si queremso orden numeros: ...data-type="number"/>-->
+    <h1>Ejemplo 4</h1>
+    <xsl:for-each select="//pelicula">
+      <xsl:sort select="titulo" order="descending"> <!--orden titulos alf-->
+      <p><b>Titulo: </b>
+        <xsl:value-of select="titulo"/>
+      </p>
+    </xsl:for-each>
+    
+    <!--buscos peliculas de fernando leon-->
+    <h1>Ejemplo 5</h1>
+    <xsl:for-each select="//pelicula[director='Fernando León']">
+      <xsl:sort select="titulo"/> <!--orden titulos alf-->
+      <p><b>Titulo: </b>
+        <xsl:value-of select="titulo"/>
+      </p>
+    </xsl:for-each>
+  
+  </body>
+  </html>
+  
+  </xsl:template>
+</xsl:stylesheet>
