@@ -39,31 +39,4 @@
     </p>
    </xsl:for-each>
 
-<h1>Ejercicio 4</h1>
-<xsl:for-each select="horario/dia">
-<xsl:sort select="numdia"/>
-<p>
-<b>Día:</b>
-<xsl:value-of select="numdia"/>
-<br/>
-<xsl:for-each select="tarea">
-<b>Tarea:</b>
-<xsl:value-of select="nombre"/>
-<br/>
-<b>Prioridad:</b>
-<xsl:value-of select="@prioridad"/>
-<br/>
-<b>Inicio:</b>
-<xsl:value-of select="hora-ini"/>
-<br/>
-<b>Fin:</b>
-<xsl:value-of select="hora-fin"/>
-<br/>
-</xsl:for-each>
-</p>
-</xsl:for-each>
 
-<h1>Ejercicio 5</h1>
-
-</xsl:template>
-</xsl:stylesheet>
