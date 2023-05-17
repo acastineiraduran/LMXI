@@ -22,8 +22,8 @@
         <xsl:value-of select="tarea/nombre"></xsl:value-of>
         </p>
     </xsl:for-each>
-</body>
-</html>
+
+
 
   <h1>Ejercicio 3</h1>
    <xsl:for-each select="//dia">
@@ -39,4 +39,67 @@
     </p>
    </xsl:for-each>
 
+<h1>Ejercicio 4</h1>
+  <xsl:for-each select="//dia">
 
+  <xsl:sort select="numdia"></xsl:sort>
+  <p>
+  <b>numdia:</b>
+   <xsl:value-of select="numdia"/>
+   <br></br>
+   <b>nombre:</b>
+   <xsl:value-of select="tarea/nombre"/>
+   <br></br>
+</p>
+</xsl:for-each>
+
+<h1>Ejercicio 5</h1>
+  <xsl:for-each select="//dia">
+  <b>HORARIO:</b>
+  <p>
+   <xsl:for-each select="tarea">
+   <blockquote>
+   <xsl:choose>
+   <xsl:when test="@prioridad">
+    <b>prioridad:</b>
+        <xsl:value-of select="@prioridad"/>
+    </xsl:when>
+    </xsl:choose>
+    <br></br>
+    <b>hora-ini:</b>
+      <xsl:value-of select="hora-ini"/>
+      <br></br>
+    <b>hora-fin:</b>
+      <xsl:value-of select="hora-fin"/>
+      <br></br>
+    <b>nombre:</b>
+      <xsl:value-of select="nombre"/>
+    </blockquote>
+   </xsl:for-each>
+  </p>
+  </xsl:for-each>
+
+
+<h1>Ejercicio 6</h1>
+    <xsl:for-each select="//tarea">
+      <p>
+        <strong><xsl:value-of select="nombre"/></strong>
+         <xsl:choose>
+          <xsl:when test="hora-fin &lt;12">
+            -> Por la mañana
+          </xsl:when>
+          <xsl:when test="hora-fin &lt; 14">
+            -> Por el mediodia
+          </xsl:when>
+          <xsl:otherwise>
+            -> Por la tarde
+          </xsl:otherwise>
+         </xsl:choose>
+      </p>
+    </xsl:for-each>
+
+
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>

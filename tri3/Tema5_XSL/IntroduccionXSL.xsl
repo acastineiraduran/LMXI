@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:template match="/"><!--significa que seleccionamos todo-->
+<!--IMPORTANTE: ir a firefox poner en el buscador: about:config      busca security.fileuri.strict_origin_policy y cambiarlo a false  -->
   <!--ELEMENTOS-->
   <html>
 <head>
@@ -8,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" href="./IntroduccionXSL.css"/>
 </head>
-
+  
   <body>
     <h1>Ejemplo 1</h1> 
      <xsl:value-of select="//titulo"/><!-- selecciona y muestra salida del elemento entre comillas-->
@@ -61,7 +62,7 @@
           <p>Otro</p>
         </xsl:otherwise>
       </xsl:choose>
-      </xsl:for-each>
+    </xsl:for-each>
     
     <h1>Ejemplo 8 - LISTAS ORDENADAS</h1>
     <!--recordar listas ordenadas/no ordenadas y de definiciones de HTML-->
