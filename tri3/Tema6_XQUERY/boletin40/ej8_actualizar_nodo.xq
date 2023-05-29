@@ -1,0 +1,1 @@
+replace value of node //baile[last()]/profesor with 'Angel Correlada'

@@ -1,0 +1,1 @@
+delete node //baile[profesor='Miriam Gutiérrez']
